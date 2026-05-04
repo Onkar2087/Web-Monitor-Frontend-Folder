@@ -1,16 +1,112 @@
-# React + Vite
+# 🌐 Web Monitor Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend for the Web Monitor application.
+Provides UI to track website changes, view diffs, summaries, and system health.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* Add and manage URLs
+* View change status
+* Diff visualization
+* Summary of changes
+* Evidence display
+* History tracking
+* System health monitoring
+* Responsive UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React (Vite)
+* Tailwind CSS
+* Axios
+* React Router
+* React Hot Toast
+
+---
+
+## 📂 Project Structure
+
+```
+frontend/
+│── pages/
+│── services/
+│── App.jsx
+│── main.jsx
+│── index.css
+│── package.json
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone repo
+
+```
+git clone <frontend-repo-url>
+cd frontend
+```
+
+### 2. Install dependencies
+
+```
+npm install
+```
+
+### 3. Create `.env`
+
+```
+VITE_API_URL=http://localhost:5000/api
+```
+
+### 4. Run frontend
+
+```
+npm run dev
+```
+
+---
+
+## 🔗 Pages
+
+| Route         | Description              |
+| ------------- | ------------------------ |
+| `/`           | Home page                |
+| `/status/:id` | Detailed status page     |
+
+---
+
+## 🧠 UI Components
+
+* **Diff View** → shows added/removed content
+* **Summary** → LLM-generated explanation
+* **Evidence** → key lines causing changes
+* **History** → past timestamps
+* **System Health** → backend + DB + LLM status
+
+---
+
+## ⚠️ Notes
+
+* Requires backend to be running
+* API URL must be configured correctly
+* Some websites may block scraping
+
+---
+
+## 📌 Future Improvements
+
+* Better diff visualization => side-by-side
+* Dark mode
+* User accounts
+* Notifications for changes
+
+---
+
+## 👨‍💻 Author
+
+Onkar Dhingra
